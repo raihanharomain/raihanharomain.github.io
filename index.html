@@ -2,20 +2,19 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Raihan Haromain | Profil Pribadi & Portofolio</title>
 
     <meta name="description"
-        content="Profil pribadi dan portofolio Raihan Haromain. Informasi mengenai pendidikan, pengalaman kerja, keahlian, teknologi, dan aktivitas digital.">
+        content="Profil pribadi dan portofolio Raihan Haromain. Informasi mengenai pendidikan, pengalaman kerja, keahlian, teknologi, dan media digital.">
 
     <meta name="author" content="Raihan Haromain">
-
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://raihanharomain.github.io/">
 
+    <!-- Open Graph -->
     <meta property="og:title"
         content="Raihan Haromain | Profil Pribadi & Portofolio">
 
@@ -34,37 +33,44 @@
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
             background: #f5f7fa;
             color: #222;
         }
 
+        /* HEADER */
         header {
             background: #111827;
             color: white;
             text-align: center;
-            padding: 70px 20px;
+            padding: 75px 20px;
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 44px;
             margin-bottom: 10px;
         }
 
         header p {
-            font-size: 18px;
+            font-size: 19px;
             color: #d1d5db;
         }
 
+        /* NAVIGATION */
         nav {
             background: white;
             padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         nav a {
@@ -78,25 +84,33 @@
             color: #2563eb;
         }
 
+        /* CONTAINER */
         .container {
             max-width: 900px;
             margin: auto;
             padding: 20px;
         }
 
+        /* SECTION */
         section {
             background: white;
             margin: 25px 0;
             padding: 35px;
             border-radius: 14px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
         }
 
-        h2 {
+        section h2 {
             margin-bottom: 18px;
             color: #111827;
+            font-size: 27px;
         }
 
+        section p {
+            margin-bottom: 15px;
+        }
+
+        /* LIST */
         ul {
             padding-left: 22px;
         }
@@ -105,11 +119,30 @@
             margin-bottom: 8px;
         }
 
+        /* HIGHLIGHT */
         .highlight {
             font-weight: bold;
             color: #2563eb;
         }
 
+        /* EXPERIENCE */
+        .experience-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .experience-item h3 {
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+
+        /* FOOTER */
         footer {
             text-align: center;
             background: #111827;
@@ -118,9 +151,23 @@
             margin-top: 40px;
         }
 
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* MOBILE */
         @media (max-width: 600px) {
+
+            header {
+                padding: 60px 20px;
+            }
+
             header h1 {
-                font-size: 32px;
+                font-size: 34px;
+            }
+
+            header p {
+                font-size: 17px;
             }
 
             nav a {
@@ -132,104 +179,149 @@
             section {
                 padding: 25px 20px;
             }
+
+            section h2 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Raihan Haromain</h1>
-    <p>Profil Pribadi & Portofolio</p>
-</header>
+    <!-- HEADER -->
+    <header>
+        <h1>Raihan Haromain</h1>
+        <p>Profil Pribadi &amp; Portofolio</p>
+    </header>
 
-<nav>
-    <a href="#tentang">Tentang</a>
-    <a href="#pendidikan">Pendidikan</a>
-    <a href="#pengalaman">Pengalaman</a>
-    <a href="#keahlian">Keahlian</a>
-</nav>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#keahlian">Keahlian</a>
+    </nav>
 
-<main class="container">
+    <!-- CONTENT -->
+    <main class="container">
 
-    <section id="tentang">
-        <h2>Tentang Raihan Haromain</h2>
+        <!-- TENTANG -->
+        <section id="tentang">
+            <h2>Tentang Raihan Haromain</h2>
 
-        <p>
-            Selamat datang di website resmi profil pribadi
-            <span class="highlight">Raihan Haromain</span>.
-        </p>
+            <p>
+                Selamat datang di website resmi profil pribadi
+                <span class="highlight">Raihan Haromain</span>.
+            </p>
 
-        <p>
-            Website ini dibuat sebagai halaman profil pribadi dan
-            portofolio yang berisi informasi mengenai pendidikan,
-            pengalaman, keahlian, serta ketertarikan di bidang
-            teknologi dan media digital.
-        </p>
-    </section>
+            <p>
+                Website ini dibuat sebagai halaman profil pribadi
+                dan portofolio yang berisi informasi mengenai
+                pendidikan, pengalaman kerja, keahlian, serta
+                ketertarikan di bidang teknologi dan media digital.
+            </p>
+        </section>
 
-    <section id="pendidikan">
-        <h2>Pendidikan</h2>
+        <!-- PENDIDIKAN -->
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
 
-        <p>
-            <strong>SMK Teknik Elektronika Industri</strong>
-        </p>
+            <p>
+                <strong>SMK Teknik Elektronika Industri</strong>
+            </p>
 
-        <p>
-            Memiliki latar belakang pendidikan di bidang
-            Teknik Elektronika Industri.
-        </p>
-    </section>
+            <p>
+                Memiliki latar belakang pendidikan di bidang
+                Teknik Elektronika Industri.
+            </p>
+        </section>
 
-    <section id="pengalaman">
-        <h2>Pengalaman</h2>
+        <!-- PENGALAMAN -->
+        <section id="pengalaman">
+            <h2>Pengalaman Kerja</h2>
 
-        <p>
-            Memiliki pengalaman di beberapa bidang pekerjaan,
-            antara lain:
-        </p>
+            <p>
+                Memiliki pengalaman kerja di beberapa bidang,
+                antara lain:
+            </p>
 
-        <ul>
-            <li>Retail</li>
-            <li>Perhotelan</li>
-            <li>Rumah makan</li>
-        </ul>
-    </section>
+            <div class="experience-item">
+                <h3>Retail</h3>
+                <p>
+                    Memiliki pengalaman di bidang retail,
+                    termasuk pelayanan pelanggan dan aktivitas
+                    operasional toko.
+                </p>
+            </div>
 
-    <section id="keahlian">
-        <h2>Keahlian</h2>
+            <div class="experience-item">
+                <h3>Admin</h3>
+                <p>
+                    Memiliki pengalaman dalam pekerjaan administrasi,
+                    pengelolaan data, pengarsipan dokumen,
+                    serta pekerjaan yang berhubungan dengan
+                    operasional administrasi.
+                </p>
+            </div>
 
-        <ul>
-            <li>Teknik Elektronika Industri</li>
-            <li>Pelayanan pelanggan</li>
-            <li>Komunikasi</li>
-            <li>Kerja sama tim</li>
-            <li>Pengoperasian teknologi digital</li>
-            <li>Media digital</li>
-        </ul>
-    </section>
+            <div class="experience-item">
+                <h3>Perhotelan</h3>
+                <p>
+                    Memiliki pengalaman di bidang perhotelan
+                    dan pelayanan tamu.
+                </p>
+            </div>
 
-    <section>
-        <h2>Tujuan Website</h2>
+            <div class="experience-item">
+                <h3>Rumah Makan</h3>
+                <p>
+                    Memiliki pengalaman di bidang pelayanan
+                    dan operasional rumah makan.
+                </p>
+            </div>
+        </section>
 
-        <p>
-            Website ini merupakan halaman informasi pribadi
-            Raihan Haromain yang dapat digunakan sebagai profil
-            online dan portofolio.
-        </p>
+        <!-- KEAHLIAN -->
+        <section id="keahlian">
+            <h2>Keahlian</h2>
 
-        <p>
-            Untuk informasi terbaru mengenai Raihan Haromain,
-            silakan mengunjungi website ini.
-        </p>
-    </section>
+            <ul>
+                <li>Teknik Elektronika Industri</li>
+                <li>Pelayanan pelanggan</li>
+                <li>Administrasi</li>
+                <li>Pengelolaan data</li>
+                <li>Komunikasi</li>
+                <li>Kerja sama tim</li>
+                <li>Pengoperasian teknologi digital</li>
+                <li>Media digital</li>
+            </ul>
+        </section>
 
-</main>
+        <!-- TUJUAN -->
+        <section>
+            <h2>Tujuan Website</h2>
 
-<footer>
-    <p>© 2026 Raihan Haromain. All rights reserved.</p>
-    <p>raihanharomain.github.io</p>
-</footer>
+            <p>
+                Website ini merupakan halaman informasi pribadi
+                Raihan Haromain yang dapat digunakan sebagai
+                profil online dan portofolio.
+            </p>
+
+            <p>
+                Website ini dibuat untuk memperkenalkan profil,
+                pendidikan, pengalaman kerja, dan keahlian
+                Raihan Haromain secara online.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Raihan Haromain. All rights reserved.</p>
+        <p>raihanharomain.github.io</p>
+    </footer>
 
 </body>
 </html>
