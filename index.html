@@ -2,29 +2,47 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Raihan Haromain | Profil Pribadi & Portofolio</title>
+    <title>Raihan Haromain | Profil Pribadi & Pengalaman Kerja</title>
 
     <meta name="description"
-        content="Profil pribadi dan portofolio Raihan Haromain. Informasi mengenai pendidikan, pengalaman kerja, keahlian, teknologi, dan media digital.">
+        content="Profil pribadi Raihan Haromain, lulusan Teknik Elektronika Industri dengan pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan.">
+
+    <meta name="keywords"
+        content="Raihan Haromain, profil Raihan Haromain, pengalaman kerja Raihan Haromain, Teknik Elektronika Industri">
 
     <meta name="author" content="Raihan Haromain">
+
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://raihanharomain.github.io/">
+    <link rel="canonical"
+        href="https://raihanharomain.github.io/">
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="Raihan Haromain | Profil Pribadi & Portofolio">
+        content="Raihan Haromain | Profil Pribadi">
 
     <meta property="og:description"
-        content="Profil pribadi dan portofolio Raihan Haromain.">
+        content="Profil pribadi, pendidikan, pengalaman kerja, kemampuan, dan informasi mengenai Raihan Haromain.">
+
+    <meta property="og:type" content="profile">
 
     <meta property="og:url"
         content="https://raihanharomain.github.io/">
 
-    <meta property="og:type" content="website">
+    <!-- Structured Data untuk Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Raihan Haromain",
+      "url": "https://raihanharomain.github.io/",
+      "jobTitle": "Admin",
+      "description": "Raihan Haromain adalah individu dengan latar belakang pendidikan Teknik Elektronika Industri serta pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan."
+    }
+    </script>
 
     <style>
         * {
@@ -39,30 +57,28 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            background: #f5f7fa;
+            background: #f4f6f8;
             color: #222;
+            line-height: 1.7;
         }
 
-        /* HEADER */
         header {
-            background: #111827;
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
             color: white;
+            padding: 70px 20px;
             text-align: center;
-            padding: 75px 20px;
         }
 
         header h1 {
-            font-size: 44px;
+            font-size: 42px;
             margin-bottom: 10px;
         }
 
         header p {
             font-size: 19px;
-            color: #d1d5db;
+            opacity: 0.95;
         }
 
-        /* NAVIGATION */
         nav {
             background: white;
             padding: 15px;
@@ -70,83 +86,81 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
 
         nav a {
-            color: #111827;
+            color: #0d47a1;
             text-decoration: none;
-            margin: 0 12px;
+            margin: 0 10px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #2563eb;
+            text-decoration: underline;
         }
 
-        /* CONTAINER */
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
+        main {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 0 20px;
         }
 
-        /* SECTION */
         section {
             background: white;
-            margin: 25px 0;
             padding: 35px;
-            border-radius: 14px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
         }
 
-        section h2 {
-            margin-bottom: 18px;
-            color: #111827;
-            font-size: 27px;
-        }
-
-        section p {
-            margin-bottom: 15px;
-        }
-
-        /* LIST */
-        ul {
-            padding-left: 22px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* HIGHLIGHT */
-        .highlight {
-            font-weight: bold;
-            color: #2563eb;
-        }
-
-        /* EXPERIENCE */
-        .experience-item {
+        h2 {
+            color: #0d47a1;
             margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e5e7eb;
+            font-size: 28px;
         }
 
-        .experience-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-
-        .experience-item h3 {
-            color: #2563eb;
+        h3 {
+            color: #1976d2;
             margin-bottom: 5px;
         }
 
-        /* FOOTER */
-        footer {
+        p {
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 18px;
+        }
+
+        .job {
+            border-left: 4px solid #1976d2;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: #eef5ff;
+            padding: 18px;
+            border-radius: 10px;
             text-align: center;
-            background: #111827;
-            color: #d1d5db;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
             padding: 30px 20px;
             margin-top: 40px;
         }
@@ -155,46 +169,38 @@
             margin: 5px 0;
         }
 
-        /* MOBILE */
         @media (max-width: 600px) {
-
             header {
-                padding: 60px 20px;
+                padding: 50px 15px;
             }
 
             header h1 {
-                font-size: 34px;
+                font-size: 32px;
             }
 
             header p {
-                font-size: 17px;
+                font-size: 16px;
+            }
+
+            nav {
+                overflow-x: auto;
+                white-space: nowrap;
             }
 
             nav a {
-                display: inline-block;
-                margin: 5px 7px;
                 font-size: 14px;
+                margin: 0 6px;
             }
 
             section {
                 padding: 25px 20px;
             }
 
-            section h2 {
+            h2 {
                 font-size: 24px;
             }
         }
     </style>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Raihan Haromain",
-  "url": "https://raihanharomain.github.io/",
-  "jobTitle": "Admin",
-  "description": "Raihan Haromain adalah individu dengan latar belakang pendidikan Teknik Elektronika Industri serta pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan."
-}
-</script>
 </head>
 
 <body>
@@ -202,34 +208,43 @@
     <!-- HEADER -->
     <header>
         <h1>Raihan Haromain</h1>
-        <p>Profil Pribadi &amp; Portofolio</p>
+        <p>Profil Pribadi &amp; Profesional</p>
     </header>
 
-    <!-- NAVIGATION -->
+    <!-- NAVIGASI -->
     <nav>
         <a href="#tentang">Tentang</a>
         <a href="#pendidikan">Pendidikan</a>
         <a href="#pengalaman">Pengalaman</a>
         <a href="#keahlian">Keahlian</a>
+        <a href="#kontak">Kontak</a>
     </nav>
 
-    <!-- CONTENT -->
-    <main class="container">
+    <main>
 
         <!-- TENTANG -->
         <section id="tentang">
             <h2>Tentang Raihan Haromain</h2>
 
-            <p>
-                Selamat datang di website resmi profil pribadi
-                <span class="highlight">Raihan Haromain</span>.
+            <p class="intro">
+                Halo, saya <strong>Raihan Haromain</strong>.
+                Ini adalah website profil pribadi saya yang berisi
+                informasi mengenai pendidikan, pengalaman kerja,
+                kemampuan, dan minat saya.
             </p>
 
             <p>
-                Website ini dibuat sebagai halaman profil pribadi
-                dan portofolio yang berisi informasi mengenai
-                pendidikan, pengalaman kerja, keahlian, serta
-                ketertarikan di bidang teknologi dan media digital.
+                Saya memiliki latar belakang pendidikan
+                <strong>Teknik Elektronika Industri</strong> dan
+                pengalaman kerja di beberapa bidang, termasuk
+                retail, administrasi, perhotelan, dan rumah makan.
+            </p>
+
+            <p>
+                Website ini dibuat sebagai profil pribadi dan
+                portofolio online agar informasi mengenai
+                <strong>Raihan Haromain</strong> dapat ditemukan
+                secara online.
             </p>
         </section>
 
@@ -237,91 +252,122 @@
         <section id="pendidikan">
             <h2>Pendidikan</h2>
 
-            <p>
-                <strong>SMK Teknik Elektronika Industri</strong>
-            </p>
+            <h3>SMK Teknik Elektronika Industri</h3>
 
             <p>
-                Memiliki latar belakang pendidikan di bidang
-                Teknik Elektronika Industri.
+                Latar belakang pendidikan di bidang
+                <strong>Teknik Elektronika Industri</strong>,
+                dengan pengetahuan dasar mengenai elektronika,
+                perangkat dan sistem teknis.
             </p>
         </section>
 
-        <!-- PENGALAMAN -->
+        <!-- PENGALAMAN KERJA -->
         <section id="pengalaman">
             <h2>Pengalaman Kerja</h2>
 
-            <p>
-                Memiliki pengalaman kerja di beberapa bidang,
-                antara lain:
-            </p>
-
-            <div class="experience-item">
-                <h3>Retail</h3>
+            <div class="job">
+                <h3>1. Retail</h3>
                 <p>
-                    Memiliki pengalaman di bidang retail,
-                    termasuk pelayanan pelanggan dan aktivitas
-                    operasional toko.
+                    Memiliki pengalaman bekerja di bidang retail,
+                    melayani pelanggan, membantu kegiatan operasional,
+                    serta menjaga kerapian dan pelayanan.
                 </p>
             </div>
 
-            <div class="experience-item">
-                <h3>Admin</h3>
+            <div class="job">
+                <h3>2. Admin</h3>
                 <p>
-                    Memiliki pengalaman dalam pekerjaan administrasi,
-                    pengelolaan data, pengarsipan dokumen,
-                    serta pekerjaan yang berhubungan dengan
-                    operasional administrasi.
+                    Memiliki pengalaman sebagai admin dengan kegiatan
+                    yang berkaitan dengan administrasi, pengelolaan
+                    data, pencatatan, dan pekerjaan operasional.
                 </p>
             </div>
 
-            <div class="experience-item">
-                <h3>Perhotelan</h3>
+            <div class="job">
+                <h3>3. Hotel</h3>
                 <p>
-                    Memiliki pengalaman di bidang perhotelan
-                    dan pelayanan tamu.
+                    Memiliki pengalaman bekerja di lingkungan
+                    perhotelan dan memahami pentingnya pelayanan,
+                    komunikasi, serta kerja sama dalam operasional.
                 </p>
             </div>
 
-            <div class="experience-item">
-                <h3>Rumah Makan</h3>
+            <div class="job">
+                <h3>4. Rumah Makan</h3>
                 <p>
-                    Memiliki pengalaman di bidang pelayanan
-                    dan operasional rumah makan.
+                    Memiliki pengalaman bekerja di rumah makan,
+                    termasuk membantu kegiatan pelayanan dan
+                    operasional sehari-hari.
                 </p>
             </div>
         </section>
 
         <!-- KEAHLIAN -->
         <section id="keahlian">
-            <h2>Keahlian</h2>
+            <h2>Kemampuan</h2>
 
-            <ul>
-                <li>Teknik Elektronika Industri</li>
-                <li>Pelayanan pelanggan</li>
-                <li>Administrasi</li>
-                <li>Pengelolaan data</li>
-                <li>Komunikasi</li>
-                <li>Kerja sama tim</li>
-                <li>Pengoperasian teknologi digital</li>
-                <li>Media digital</li>
-            </ul>
+            <div class="skills">
+
+                <div class="skill">
+                    Administrasi
+                </div>
+
+                <div class="skill">
+                    Pengelolaan Data
+                </div>
+
+                <div class="skill">
+                    Pelayanan Pelanggan
+                </div>
+
+                <div class="skill">
+                    Komunikasi
+                </div>
+
+                <div class="skill">
+                    Kerja Sama Tim
+                </div>
+
+                <div class="skill">
+                    Operasional
+                </div>
+
+                <div class="skill">
+                    Dasar Elektronika
+                </div>
+
+                <div class="skill">
+                    Teknologi &amp; Digital
+                </div>
+
+            </div>
         </section>
 
-        <!-- TUJUAN -->
+        <!-- MINAT -->
         <section>
-            <h2>Tujuan Website</h2>
+            <h2>Minat</h2>
 
             <p>
-                Website ini merupakan halaman informasi pribadi
-                Raihan Haromain yang dapat digunakan sebagai
-                profil online dan portofolio.
+                Saya memiliki minat terhadap teknologi,
+                perangkat elektronik, dunia digital,
+                media sosial, dan pengembangan kemampuan
+                di bidang teknologi.
+            </p>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="kontak" class="contact">
+            <h2>Profil Online</h2>
+
+            <p>
+                Website resmi profil pribadi:
             </p>
 
             <p>
-                Website ini dibuat untuk memperkenalkan profil,
-                pendidikan, pengalaman kerja, dan keahlian
-                Raihan Haromain secara online.
+                <strong>
+                    https://raihanharomain.github.io/
+                </strong>
             </p>
         </section>
 
@@ -329,8 +375,13 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Raihan Haromain. All rights reserved.</p>
-        <p>raihanharomain.github.io</p>
+        <p>
+            &copy; 2026 Raihan Haromain
+        </p>
+
+        <p>
+            Profil Pribadi &amp; Portofolio
+        </p>
     </footer>
 
 </body>
