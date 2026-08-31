@@ -5,55 +5,75 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Raihan Haromain | Profil Pribadi & Pengalaman Kerja</title>
+    <title>Raihan Haromain | Profil Pribadi & Portofolio</title>
 
     <meta name="description"
-        content="Profil pribadi Raihan Haromain, lulusan Teknik Elektronika Industri dengan pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan.">
-
-    <meta name="keywords"
-        content="Raihan Haromain, profil Raihan Haromain, pengalaman kerja Raihan Haromain, Teknik Elektronika Industri">
+        content="Profil pribadi Raihan Haromain. Lulusan Teknik Elektronika Industri dengan pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan.">
 
     <meta name="author" content="Raihan Haromain">
 
     <meta name="robots" content="index, follow">
 
+    <meta name="googlebot" content="index, follow">
+
     <link rel="canonical"
         href="https://raihanharomain.github.io/">
 
-    <!-- Open Graph -->
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="profile">
+
     <meta property="og:title"
-        content="Raihan Haromain | Profil Pribadi">
+        content="Raihan Haromain | Profil Pribadi & Portofolio">
 
     <meta property="og:description"
-        content="Profil pribadi, pendidikan, pengalaman kerja, kemampuan, dan informasi mengenai Raihan Haromain.">
-
-    <meta property="og:type" content="profile">
+        content="Profil pribadi Raihan Haromain, pendidikan, pengalaman kerja, keahlian, dan media sosial.">
 
     <meta property="og:url"
         content="https://raihanharomain.github.io/">
 
-    <!-- Structured Data untuk Google -->
+    <meta property="og:image"
+        content="https://raihanharomain.github.io/IMG-20251223-WA0031.jpg">
+
+    <meta property="og:image:alt"
+        content="Foto profil Raihan Haromain">
+
+    <meta property="profile:first_name"
+        content="Raihan">
+
+    <meta property="profile:last_name"
+        content="Haromain">
+
+
+    <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Raihan Haromain",
-  "url": "https://raihanharomain.github.io/",
-  "image": "https://raihanharomain.github.io/IMG-20251223-WA0031.jpg",
-  "jobTitle": "Admin",
-  "description": "Raihan Haromain adalah individu dengan latar belakang pendidikan Teknik Elektronika Industri serta pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan."
-}
-</script>
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Raihan Haromain",
+      "givenName": "Raihan",
+      "familyName": "Haromain",
+      "url": "https://raihanharomain.github.io/",
+      "image": "https://raihanharomain.github.io/IMG-20251223-WA0031.jpg",
+      "jobTitle": "Admin",
+      "description": "Raihan Haromain adalah individu dengan latar belakang pendidikan Teknik Elektronika Industri serta pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan.",
+      "sameAs": [
+        "https://www.instagram.com/reyhan.flag/",
+        "https://www.facebook.com/share/1HjEJnduS3/"
+      ],
+      "knowsAbout": [
+        "Administrasi",
+        "Retail",
+        "Pelayanan pelanggan",
+        "Teknik Elektronika Industri",
+        "Teknologi digital",
+        "Media digital"
+      ]
+    }
+    </script>
+
 
     <style>
-        .profile-photo {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin-bottom: 20px;
-        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -71,15 +91,40 @@
             line-height: 1.7;
         }
 
+
+        /* HEADER */
+
         header {
-            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            background: linear-gradient(
+                135deg,
+                #0d47a1,
+                #1976d2
+            );
+
             color: white;
-            padding: 70px 20px;
             text-align: center;
+            padding: 70px 20px;
+        }
+
+        .profile-photo {
+            width: 170px;
+            height: 170px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 5px solid white;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.25);
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 44px;
             margin-bottom: 10px;
         }
 
@@ -88,20 +133,29 @@
             opacity: 0.95;
         }
 
+
+        /* NAVIGATION */
+
         nav {
             background: white;
             padding: 15px;
             text-align: center;
+
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+            box-shadow:
+                0 2px 10px
+                rgba(0,0,0,0.08);
         }
 
         nav a {
             color: #0d47a1;
             text-decoration: none;
-            margin: 0 10px;
+
+            margin: 0 9px;
+
             font-weight: bold;
         }
 
@@ -109,32 +163,47 @@
             text-decoration: underline;
         }
 
+
+        /* MAIN */
+
         main {
             max-width: 950px;
             margin: 30px auto;
             padding: 0 20px;
         }
 
+
+        /* SECTION */
+
         section {
             background: white;
+
             padding: 35px;
+
             margin-bottom: 25px;
+
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+
+            box-shadow:
+                0 4px 15px
+                rgba(0,0,0,0.07);
         }
 
-        h2 {
+        section h2 {
             color: #0d47a1;
+
             margin-bottom: 20px;
+
             font-size: 28px;
         }
 
-        h3 {
+        section h3 {
             color: #1976d2;
-            margin-bottom: 5px;
+
+            margin-bottom: 8px;
         }
 
-        p {
+        section p {
             margin-bottom: 15px;
         }
 
@@ -142,35 +211,150 @@
             font-size: 18px;
         }
 
+
+        /* INFORMASI PROFIL */
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            padding: 10px 0;
+
+            border-bottom:
+                1px solid #e5e7eb;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+
+        /* PENGALAMAN KERJA */
+
         .job {
             border-left: 4px solid #1976d2;
+
             padding-left: 20px;
+
             margin-bottom: 25px;
         }
 
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* KEAHLIAN */
+
         .skills {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(200px, 1fr)
+                );
+
             gap: 15px;
         }
 
         .skill {
             background: #eef5ff;
+
             padding: 18px;
+
             border-radius: 10px;
+
             text-align: center;
+
             font-weight: bold;
         }
+
+
+        /* MEDIA SOSIAL */
+
+        .social-links {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+
+            margin-top: 25px;
+        }
+
+        .social {
+            display: inline-block;
+
+            padding: 14px 24px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            color: white;
+
+            transition: 0.3s;
+        }
+
+        .social:hover {
+            transform: translateY(-3px);
+
+            opacity: 0.9;
+        }
+
+        .instagram {
+            background:
+                linear-gradient(
+                    45deg,
+                    #f9ce34,
+                    #ee2a7b,
+                    #6228d7
+                );
+        }
+
+        .facebook {
+            background: #1877f2;
+        }
+
+
+        /* WEBSITE */
+
+        .website-link {
+            color: #0d47a1;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+        .website-link:hover {
+            text-decoration: underline;
+        }
+
+
+        /* CONTACT */
 
         .contact {
             text-align: center;
         }
 
+
+        /* FOOTER */
+
         footer {
             background: #0d47a1;
+
             color: white;
+
             text-align: center;
+
             padding: 30px 20px;
+
             margin-top: 40px;
         }
 
@@ -178,13 +362,22 @@
             margin: 5px 0;
         }
 
+
+        /* MOBILE */
+
         @media (max-width: 600px) {
+
             header {
-                padding: 50px 15px;
+                padding: 55px 15px;
+            }
+
+            .profile-photo {
+                width: 145px;
+                height: 145px;
             }
 
             header h1 {
-                font-size: 32px;
+                font-size: 34px;
             }
 
             header p {
@@ -205,121 +398,287 @@
                 padding: 25px 20px;
             }
 
-            h2 {
+            section h2 {
                 font-size: 24px;
             }
+
+            .social-links {
+                flex-direction: column;
+            }
+
+            .social {
+                width: 100%;
+                text-align: center;
+            }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-    <img
-        src="IMG-20251223-WA0031.jpg"
-        alt="Foto profil Raihan Haromain"
-        class="profile-photo">
 
-    <h1>Raihan Haromain</h1>
-    <p>Profil Pribadi &amp; Profesional</p>
+    <!-- HEADER -->
+
+    <header>
+
+        <img
+            src="IMG-20251223-WA0031.jpg"
+            alt="Foto profil Raihan Haromain"
+            class="profile-photo">
+
+        <h1>
+            Raihan Haromain
+        </h1>
+
+        <p>
+            Profil Pribadi &amp; Profesional
+        </p>
+
     </header>
 
-    <!-- NAVIGASI -->
+
+    <!-- NAVIGATION -->
+
     <nav>
-        <a href="#tentang">Tentang</a>
-        <a href="#pendidikan">Pendidikan</a>
-        <a href="#pengalaman">Pengalaman</a>
-        <a href="#keahlian">Keahlian</a>
-        <a href="#kontak">Kontak</a>
+
+        <a href="#tentang">
+            Tentang
+        </a>
+
+        <a href="#pendidikan">
+            Pendidikan
+        </a>
+
+        <a href="#pengalaman">
+            Pengalaman
+        </a>
+
+        <a href="#keahlian">
+            Keahlian
+        </a>
+
+        <a href="#sosial">
+            Media Sosial
+        </a>
+
     </nav>
+
 
     <main>
 
+
         <!-- TENTANG -->
+
         <section id="tentang">
-            <h2>Tentang Raihan Haromain</h2>
+
+            <h2>
+                Tentang Raihan Haromain
+            </h2>
 
             <p class="intro">
-                Halo, saya <strong>Raihan Haromain</strong>.
-                Ini adalah website profil pribadi saya yang berisi
-                informasi mengenai pendidikan, pengalaman kerja,
-                kemampuan, dan minat saya.
+
+                Halo, saya
+                <strong>
+                    Raihan Haromain
+                </strong>.
+
             </p>
 
             <p>
-                Saya memiliki latar belakang pendidikan
-                <strong>Teknik Elektronika Industri</strong> dan
-                pengalaman kerja di beberapa bidang, termasuk
-                retail, administrasi, perhotelan, dan rumah makan.
+
+                Website ini merupakan
+                profil pribadi dan portofolio
+                online Raihan Haromain.
+
             </p>
 
             <p>
-                Website ini dibuat sebagai profil pribadi dan
-                portofolio online agar informasi mengenai
-                <strong>Raihan Haromain</strong> dapat ditemukan
-                secara online.
+
+                Saya memiliki latar belakang
+                pendidikan Teknik Elektronika Industri
+                serta pengalaman kerja di beberapa
+                bidang, termasuk retail, administrasi,
+                perhotelan, dan rumah makan.
+
             </p>
+
+            <p>
+
+                Website ini dibuat sebagai tempat
+                untuk memperkenalkan profil,
+                pendidikan, pengalaman kerja,
+                kemampuan, serta aktivitas digital
+                Raihan Haromain.
+
+            </p>
+
         </section>
+
+
+        <!-- INFORMASI PROFIL -->
+
+        <section>
+
+            <h2>
+                Informasi Profil
+            </h2>
+
+            <ul class="info-list">
+
+                <li>
+                    <strong>Nama:</strong>
+                    Raihan Haromain
+                </li>
+
+                <li>
+                    <strong>Pendidikan:</strong>
+                    SMK Teknik Elektronika Industri
+                </li>
+
+                <li>
+                    <strong>Pengalaman:</strong>
+                    Retail, Admin, Perhotelan,
+                    dan Rumah Makan
+                </li>
+
+                <li>
+                    <strong>Website:</strong>
+
+                    <a
+                        href="https://raihanharomain.github.io/"
+                        class="website-link">
+
+                        raihanharomain.github.io
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </section>
+
 
         <!-- PENDIDIKAN -->
-        <section id="pendidikan">
-            <h2>Pendidikan</h2>
 
-            <h3>SMK Teknik Elektronika Industri</h3>
+        <section id="pendidikan">
+
+            <h2>
+                Pendidikan
+            </h2>
+
+            <h3>
+                SMK Teknik Elektronika Industri
+            </h3>
 
             <p>
-                Latar belakang pendidikan di bidang
-                <strong>Teknik Elektronika Industri</strong>,
-                dengan pengetahuan dasar mengenai elektronika,
-                perangkat dan sistem teknis.
+
+                Memiliki latar belakang pendidikan
+                di bidang Teknik Elektronika Industri
+                dengan pengetahuan dasar mengenai
+                elektronika dan sistem teknis.
+
             </p>
+
         </section>
+
 
         <!-- PENGALAMAN KERJA -->
+
         <section id="pengalaman">
-            <h2>Pengalaman Kerja</h2>
+
+            <h2>
+                Pengalaman Kerja
+            </h2>
+
 
             <div class="job">
-                <h3>1. Retail</h3>
+
+                <h3>
+                    1. Retail
+                </h3>
+
                 <p>
-                    Memiliki pengalaman bekerja di bidang retail,
-                    melayani pelanggan, membantu kegiatan operasional,
-                    serta menjaga kerapian dan pelayanan.
+
+                    Memiliki pengalaman bekerja
+                    di bidang retail, termasuk
+                    pelayanan pelanggan, kegiatan
+                    operasional toko, serta menjaga
+                    kualitas pelayanan.
+
                 </p>
+
             </div>
 
-            <div class="job">
-                <h3>2. Admin</h3>
-                <p>
-                    Memiliki pengalaman sebagai admin dengan kegiatan
-                    yang berkaitan dengan administrasi, pengelolaan
-                    data, pencatatan, dan pekerjaan operasional.
-                </p>
-            </div>
 
             <div class="job">
-                <h3>3. Hotel</h3>
+
+                <h3>
+                    2. Admin
+                </h3>
+
                 <p>
-                    Memiliki pengalaman bekerja di lingkungan
-                    perhotelan dan memahami pentingnya pelayanan,
-                    komunikasi, serta kerja sama dalam operasional.
+
+                    Memiliki pengalaman sebagai admin
+                    dengan kegiatan yang berkaitan
+                    dengan administrasi, pengelolaan
+                    data, pencatatan, pengarsipan,
+                    dan pekerjaan operasional.
+
                 </p>
+
             </div>
 
+
             <div class="job">
-                <h3>4. Rumah Makan</h3>
+
+                <h3>
+                    3. Perhotelan
+                </h3>
+
                 <p>
-                    Memiliki pengalaman bekerja di rumah makan,
-                    termasuk membantu kegiatan pelayanan dan
+
+                    Memiliki pengalaman bekerja
+                    di lingkungan perhotelan dan
+                    memahami pentingnya pelayanan
+                    tamu, komunikasi, serta kerja
+                    sama dalam kegiatan operasional.
+
+                </p>
+
+            </div>
+
+
+            <div class="job">
+
+                <h3>
+                    4. Rumah Makan
+                </h3>
+
+                <p>
+
+                    Memiliki pengalaman bekerja
+                    di rumah makan, termasuk membantu
+                    pelayanan pelanggan dan kegiatan
                     operasional sehari-hari.
+
                 </p>
+
             </div>
+
         </section>
 
+
         <!-- KEAHLIAN -->
+
         <section id="keahlian">
-            <h2>Kemampuan</h2>
+
+            <h2>
+                Keahlian
+            </h2>
 
             <div class="skills">
 
@@ -352,43 +711,117 @@
                 </div>
 
                 <div class="skill">
-                    Teknologi &amp; Digital
+                    Teknologi Digital
+                </div>
+
+                <div class="skill">
+                    Media Digital
                 </div>
 
             </div>
+
         </section>
+
 
         <!-- MINAT -->
+
         <section>
-            <h2>Minat</h2>
+
+            <h2>
+                Minat
+            </h2>
 
             <p>
-                Saya memiliki minat terhadap teknologi,
+
+                Memiliki minat terhadap teknologi,
                 perangkat elektronik, dunia digital,
-                media sosial, dan pengembangan kemampuan
-                di bidang teknologi.
+                media sosial, serta pengembangan
+                kemampuan di bidang teknologi.
+
             </p>
+
         </section>
 
-        <!-- KONTAK -->
-        <section id="kontak" class="contact">
-            <h2>Profil Online</h2>
+
+        <!-- MEDIA SOSIAL -->
+
+        <section id="sosial">
+
+            <h2>
+                Media Sosial Raihan Haromain
+            </h2>
 
             <p>
-                Website resmi profil pribadi:
+
+                Temukan dan ikuti Raihan Haromain
+                melalui media sosial berikut:
+
+            </p>
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.instagram.com/reyhan.flag/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social instagram">
+
+                    📷 Instagram
+
+                </a>
+
+                <a
+                    href="https://www.facebook.com/share/1HjEJnduS3/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social facebook">
+
+                    📘 Facebook
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- WEBSITE -->
+
+        <section class="contact">
+
+            <h2>
+                Website Resmi
+            </h2>
+
+            <p>
+
+                Profil pribadi dan portofolio
+                Raihan Haromain:
+
             </p>
 
             <p>
-                <strong>
+
+                <a
+                    href="https://raihanharomain.github.io/"
+                    class="website-link">
+
                     https://raihanharomain.github.io/
-                </strong>
+
+                </a>
+
             </p>
+
         </section>
+
 
     </main>
 
+
     <!-- FOOTER -->
+
     <footer>
+
         <p>
             &copy; 2026 Raihan Haromain
         </p>
@@ -396,7 +829,9 @@
         <p>
             Profil Pribadi &amp; Portofolio
         </p>
+
     </footer>
+
 
 </body>
 </html>
