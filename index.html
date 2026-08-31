@@ -34,17 +34,26 @@
 
     <!-- Structured Data untuk Google -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Raihan Haromain",
-      "url": "https://raihanharomain.github.io/",
-      "jobTitle": "Admin",
-      "description": "Raihan Haromain adalah individu dengan latar belakang pendidikan Teknik Elektronika Industri serta pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan."
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raihan Haromain",
+  "url": "https://raihanharomain.github.io/",
+  "image": "https://raihanharomain.github.io/raihan-haromain.jpg",
+  "jobTitle": "Admin",
+  "description": "Raihan Haromain adalah individu dengan latar belakang pendidikan Teknik Elektronika Industri serta pengalaman kerja di bidang retail, administrasi, perhotelan, dan rumah makan."
+}
+</script>
 
     <style>
+        .profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+        }
         * {
             box-sizing: border-box;
             margin: 0;
@@ -207,8 +216,13 @@
 
     <!-- HEADER -->
     <header>
-        <h1>Raihan Haromain</h1>
-        <p>Profil Pribadi &amp; Profesional</p>
+    <img
+        src="raihan-haromain.jpg"
+        alt="Foto profil Raihan Haromain"
+        class="profile-photo">
+
+    <h1>Raihan Haromain</h1>
+    <p>Profil Pribadi &amp; Profesional</p>
     </header>
 
     <!-- NAVIGASI -->
